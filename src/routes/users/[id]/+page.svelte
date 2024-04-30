@@ -70,7 +70,7 @@
 		<Clock class="ml-3 mr-3 inline " />joined <Time timestamp={user.created * 1000} />
 		<br /><br />
 		{#if user.about}
-			{user.about}
+			{@html user.about}
 		{/if}
 		{#if user.submitted.length !== 0}
 			<hr />
